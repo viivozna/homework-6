@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">Main page</a>
+          </li>
+          <li>
+            <a href="#contact-form">Contact form</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact-form">
+        <h1 class="form-title">Contact Me</h1>
+
+        <p class="form-text">
+          If you want to contact me about work, internship or collaboration,
+          please fill in the form below.
+        </p>
+
+        <form>
+          <input
+            class="form-element"
+            type="text"
+            name="name"
+            placeholder="Enter your full name"
+          />
+
+          <input
+            class="form-element"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+
+          <input
+            class="form-element"
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+
+          <input
+            class="form-element"
+            type="number"
+            name="age"
+            placeholder="Enter your age"
+          />
+
+          <label>
+            Preferred contact date:
+            <input class="form-element" type="date" name="date" />
+          </label>
+
+          <label>
+            Attach file:
+            <input class="form-element" type="file" name="file" />
+          </label>
+
+          <label>
+            Reason for contact:
+            <select class="form-element" name="reason">
+              <option value="job">Job offer</option>
+              <option value="internship">Internship</option>
+              <option value="project">Project</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <fieldset class="form-element">
+            <legend>Preferred contact method:</legend>
+
+            <label>
+              <input type="radio" name="method" value="email" />
+              Email
+            </label>
+
+            <label>
+              <input type="radio" name="method" value="phone" />
+              Phone
+            </label>
+
+            <label>
+              <input type="radio" name="method" value="linkedin" />
+              LinkedIn
+            </label>
+          </fieldset>
+
+          <fieldset class="form-element">
+            <legend>Choose topics:</legend>
+
+            <label>
+              <input type="checkbox" name="topic" value="frontend" />
+              Frontend Development
+            </label>
+
+            <label>
+              <input type="checkbox" name="topic" value="fullstack" />
+              Full-Stack Development
+            </label>
+
+            <label>
+              <input type="checkbox" name="topic" value="cybersecurity" />
+              Cybersecurity
+            </label>
+          </fieldset>
+
+          <label>
+            Message:
+            <textarea
+              class="form-element"
+              name="message"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </label>
+
+          <label>
+            <input type="checkbox" name="agreement" value="agreed" />
+            I agree with the rules
+          </label>
+
+          <button class="form-button" type="submit">Submit</button>
+          <button class="form-button" type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Viktoriia Vozna</p>
+    </footer>
+  </body>
+</html>
