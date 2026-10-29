@@ -223,3 +223,16 @@ form button:focus {
 form button:active {
   text-decoration: underline;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--main-color);
+}
+
+th {
+  text-align: center;
+}
